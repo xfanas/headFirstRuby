@@ -1,8 +1,7 @@
-class MyClass
-  def self.new(p1, p2)
-    puts "Hello from MyClass!"
-    puts "My parameters; #{p1}, #{p2}"
+def each
+  index = 0
+  while index < self.length
+    yield self[index]
+    index += 1
   end
 end
-
-MyClass.new(1, 2)
